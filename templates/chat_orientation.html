@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orientation IA — HEL AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <main class="container my-5">
+
+        <a href="/" class="btn btn-outline-secondary btn-sm mb-3">← Retour accueil</a>
+
+        <div class="card hel-card">
+            <div class="card-body p-4 p-md-5">
+
+                <h2 class="card-title text-primary-dark">🎯 Orientation IA</h2>
+                <p class="text-muted">
+                    Décrivez vos intérêts, vos passions ou ce que vous aimez faire. 
+                    L'assistant vous recommandera la formation HEL la plus adaptée à votre profil.
+                </p>
+
+                <div class="chat-area chat-area-large mt-4" id="chat-area">
+                    <div class="chat-message bot">
+                        <strong>👋 Bonjour !</strong>
+                        <p class="small mb-0 mt-1">
+                            Décrivez-moi vos intérêts et passions, et je vous recommanderai 
+                            la formation idéale à la HEL. Par exemple : "J'aime les maths, 
+                            la technologie et programmer".
+                        </p>
+                    </div>
+                </div>
+
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control form-control-lg"
+                           id="chat-input" 
+                           placeholder="Ex: J'aime les maths et la technologie…" 
+                           autofocus>
+                    <button class="btn btn-dark" id="chat-send">Envoyer</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="/static/js/chat_orientation.js"></script>
+</body>
+</html>

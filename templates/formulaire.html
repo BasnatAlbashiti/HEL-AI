@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire de satisfaction — HEL AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <main class="container my-5">
+
+        <a href="/" class="btn btn-outline-secondary btn-sm mb-3">← Retour accueil</a>
+
+        <div class="card hel-card">
+            <div class="card-body p-4 p-md-5">
+
+                <h2 class="card-title text-primary-dark">📋 Formulaire de satisfaction</h2>
+                <p class="text-muted">
+                    Donnez-nous votre avis sur la plateforme HEL AI. 
+                    Votre retour nous aide à améliorer nos services.
+                </p>
+
+                <div id="success-message" class="alert alert-success d-none mt-3">
+                    ✅ Merci pour votre retour ! Votre réponse a été enregistrée.
+                </div>
+
+                <div id="error-message" class="alert alert-danger d-none mt-3">
+                    ❌ Une erreur est survenue. Veuillez réessayer.
+                </div>
+
+                <form id="satisfaction-form" class="mt-4">
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nom complet *</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Formation qui vous intéresse *</label>
+                        <select class="form-select" id="formation" required>
+                            <option value="">-- Choisissez une formation --</option>
+                            <option>Bachelier en Informatique</option>
+                            <option>Bachelier en Comptabilité</option>
+                            <option>Bachelier en Automobile</option>
+                            <option>Bachelier en Chimie</option>
+                            <option>Bachelier en Electronique</option>
+                            <option>Bachelier en Logopédie</option>
+                            <option>Bachelier en Relations publiques</option>
+                            <option>Bachelier en Gestion hôtelière</option>
+                            <option>Bachelier en Energies alternatives</option>
+                            <option>Master en enseignement</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Note globale *</label>
+                        <select class="form-select" id="note" required>
+                            <option value="">-- Donnez une note --</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                            <option value="4">⭐⭐⭐⭐ Bien</option>
+                            <option value="3">⭐⭐⭐ Moyen</option>
+                            <option value="2">⭐⭐ Insuffisant</option>
+                            <option value="1">⭐ Mauvais</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Commentaire</label>
+                        <textarea class="form-control" id="commentaire" rows="3" 
+                                  placeholder="Votre commentaire (optionnel)"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark btn-lg w-100">
+                        Envoyer mon avis
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/formulaire.js"></script>
+</body>
+</html>
